@@ -22,4 +22,3 @@ Friender is an Android app coded in Kotlin that allows users to browse fictitiou
 
 - The project contains unit tests located in the `test` directory. These tests can be run using Android Studio's built-in testing tools.
 - The project also includes UI tests located in the `androidTest` directory. These tests can be run using Android Studio's built-in testing tools as well.
-- 
