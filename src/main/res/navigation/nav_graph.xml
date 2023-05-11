@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <activity
+        android:id="@+id/mainActivity2"
+        android:name="com.jorfald.friender.view.MainActivity"
+        android:label="MainActivity" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.jorfald.friender.view.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_likedFriendsFragment"
+            app:destination="@id/likedFriendsFragment"
+            app:enterAnim="@anim/nav_default_pop_enter_anim"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:launchSingleTop="false"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/likedFriendsFragment"
+        android:name="com.jorfald.friender.view.LikedFriendsFragment"
+        android:label="fragment_liked_friends"
+        tools:layout="@layout/fragment_liked_friends" />
+</navigation>
